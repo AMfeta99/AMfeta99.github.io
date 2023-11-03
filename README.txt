@@ -1,3 +1,5 @@
+Ana Maria' Personal Website
+
 This website was developed with the aim of sharing a little about my interests and my life/professional path, through my academic and professional experiences, student associations in which I was involved, and projects that I have developed.
 
 The technologies used were HTML, CSS and JavaScript.
