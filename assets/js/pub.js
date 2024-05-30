@@ -1,10 +1,10 @@
-document.querySelectorAll('.title').forEach(item => {
+document.querySelectorAll('.clickable').forEach(item => {
     item.addEventListener('click', event => {
-        const description = event.target.nextElementSibling.nextElementSibling;
-        if (description.style.display === 'none' || description.style.display === '') {
-            description.style.display = 'block';
+        const remainingContent = event.target.nextElementSibling;
+        if (remainingContent.style.display === 'none' || remainingContent.style.display === '') {
+            remainingContent.style.display = 'block';
         } else {
-            description.style.display = 'none';
+            remainingContent.style.display = 'none';
         }
     });
 });
