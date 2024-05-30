@@ -15,10 +15,16 @@
 }
 figcaption {
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.8em; /* Smaller font size */
     color: #555;
     margin-bottom: 10px;
 }
 .clickable {
     cursor: pointer;
+    position: relative;
+}
+.click-indicator {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #999;
 }
