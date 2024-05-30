@@ -6,6 +6,7 @@
 }
 .title {
     color: #0000EE;
+    text-decoration: underline;
 }
 .paper-img {
     max-width: 100%;
@@ -20,10 +21,7 @@ figcaption {
 }
 .clickable {
     cursor: pointer;
-    position: relative;
-}
-.click-indicator {
+    color: #999;
     font-style: italic;
     font-size: 0.9em;
-    color: #999;
 }
