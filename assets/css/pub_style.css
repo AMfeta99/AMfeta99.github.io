@@ -6,7 +6,6 @@
 }
 .title {
     color: #0000EE;
-    text-decoration: underline;
 }
 .paper-img {
     max-width: 100%;
@@ -24,8 +23,4 @@ figcaption {
     color: #999;
     font-style: italic;
     font-size: 0.9em;
-}
-
-.inner {
-    margin-bottom: 60px; /* Add space between section*/
 }
