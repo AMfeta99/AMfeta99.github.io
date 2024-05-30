@@ -3669,7 +3669,7 @@ input, select, textarea {
 		}
 
 			#banner .more:after {
-				background-image: url("images/arrow.svg");
+				background-image: url("images/bars.svg");
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
