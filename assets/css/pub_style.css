@@ -25,3 +25,7 @@ figcaption {
     font-style: italic;
     font-size: 0.9em;
 }
+
+.inner {
+    margin-bottom: 30px; /* Add space between section*/
+}
