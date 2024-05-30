@@ -3983,8 +3983,7 @@ input, select, textarea {
 		background: none;
 	}
 
-	body.landing #banner,
-	body.is-mobile.landing .wrapper.style4{
+	body.landing .wrapper.style4{
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
