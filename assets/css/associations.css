@@ -22,14 +22,14 @@
 }
 
 
-.features .special_imag {
+.features img.special_imag {
     display: none;
     max-width: 100%;
     height: auto;
 }
-.features .active .special_imag {
+.features .active img.special_imag {
     display: block;
 }
-.features .active p {
-    display: none;
+.features .volunteer img {
+    display: block;
 }
