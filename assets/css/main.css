@@ -4059,3 +4059,9 @@ body.is-mobile.landing #banner_me {
 body.is-mobile.landing #footer {
 	background-color: #1d242a;
 }
+
+/* me description by chatgpt */
+#chatgptDescription {
+	display: none;
+	transition: display 0.5s ease;
+}
