@@ -20,3 +20,25 @@
         max-height: 50px;
     }
 }
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.features li {
+    list-style: none;
+    margin: 20px;
+    cursor: pointer;
+}
+.features img {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+.features .active img {
+    display: block;
+}
+.features .active p {
+    display: none;
+}
