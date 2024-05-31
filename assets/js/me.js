@@ -7,3 +7,9 @@ document.getElementById('toggleDescription').addEventListener('click', function(
         description.style.display = 'none';
     }
 });
+
+function showImage(element) {
+    const features = document.querySelectorAll('.features li');
+    features.forEach(item => item.classList.remove('active'));
+    element.classList.add('active');
+}
