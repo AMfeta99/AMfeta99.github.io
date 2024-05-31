@@ -9,7 +9,7 @@ document.getElementById('toggleDescription').addEventListener('click', function(
 });
 
 function showImage(element) {
-    const features = document.querySelectorAll('.features h3');
+    const features = document.querySelectorAll('.features li');
     features.forEach(item => item.classList.remove('active'));
     element.classList.add('active');
 }
