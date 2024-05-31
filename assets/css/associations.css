@@ -28,10 +28,13 @@
     max-width: 100%;
     height: auto;
 }
+
 .features .active img.special_imag {
     display: block;
 }
-
 .features .active p {
     display: none;
+}
+.features .active {
+    transform: rotateY(180deg); 
 }
