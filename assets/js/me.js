@@ -8,8 +8,13 @@ document.getElementById('toggleDescription').addEventListener('click', function(
     }
 });
 
-function showImage(element) {
-    const features = document.querySelectorAll('.features h3');
-    features.forEach(item => item.classList.remove('active'));
-    element.classList.add('active');
+
+function toggleImage(element) {
+    var features = document.querySelectorAll('.features li');
+    features.forEach(function(item) {
+        if (item !== element) {
+            item.classList.remove('active');
+        }
+    });
+    element.classList.toggle('active');
 }
