@@ -4053,9 +4053,6 @@ body.is-mobile.landing #banner_me {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: auto;
-	min-height: 0;
-	padding: 7em 3em 5em 3em;
 }
 
 body.is-mobile.landing #footer {
