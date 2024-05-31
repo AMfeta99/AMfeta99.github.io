@@ -4006,6 +4006,15 @@ body.landing #banner_me {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 0;
+	height: 100vh;
+	min-height: 35em;
+	position: relative;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: default;
+	overflow: hidden;
 }
 
 body.landing #footer {
@@ -4044,9 +4053,11 @@ body.is-mobile.landing #banner_me {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: auto;
+	min-height: 0;
+	padding: 7em 3em 5em 3em;
 }
 
 body.is-mobile.landing #footer {
 	background-color: #1d242a;
 }
-
