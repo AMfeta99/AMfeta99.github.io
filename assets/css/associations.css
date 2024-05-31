@@ -23,7 +23,6 @@
 
 
 
-
 .features img.special_imag {
     display: none;
     max-width: 100%;
@@ -31,4 +30,8 @@
 }
 .features .active img.special_imag {
     display: block;
+}
+
+.features .active p {
+    display: none;
 }
