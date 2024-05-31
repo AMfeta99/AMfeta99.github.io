@@ -10,7 +10,7 @@ document.getElementById('toggleDescription').addEventListener('click', function(
 
 
 function toggleImage(element) {
-    var features = document.querySelectorAll('.features li');
+    var features = document.querySelectorAll('.features h3');
     features.forEach(function(item) {
         if (item !== element) {
             item.classList.remove('active');
