@@ -22,9 +22,13 @@
 }
 
 
-.features li:hover img.special_imag {
-    display: block;
-}
-.features li:hover p {
+
+
+.features img.special_imag {
     display: none;
+    max-width: 100%;
+    height: auto;
+}
+.features li:hover .active img.special_imag {
+    display: block;
 }
