@@ -35,6 +35,3 @@
 .features .active p {
     display: none;
 }
-.features .active {
-    transform: rotateY(180deg); 
-}
