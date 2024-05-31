@@ -22,11 +22,11 @@
 }
 
 
-img.special_imag {
+.features img.special_imag {
     display: none;
     max-width: 100%;
     height: auto;
 }
-.active img.special_imag {
+.features .active img.special_imag {
     display: block;
 }
