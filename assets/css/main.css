@@ -4065,3 +4065,25 @@ body.is-mobile.landing #footer {
 	display: none;
 	transition: display 0.5s ease;
 }
+
+/* tech skills styling settings*/
+#tech_skills {
+	padding: 20px;
+	text-align: center;
+}
+
+/* Styles for the image */
+#tech_skills .content img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+	#tech_skills .major {
+		padding: 10px;
+	}
+	#tech_skills h2 {
+		font-size: 1.5em;
+	}
+}
