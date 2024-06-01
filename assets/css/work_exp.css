@@ -28,7 +28,7 @@ body {
 .item {
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Translucent background */
+    background-color: rgb(33 178 166 / 5%); /* Translucent background rgba(255, 255, 255, 0.8); */
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ body {
     position: absolute;
     width: 10px;
     height: 100%;
-    background-color: #00ffcc; /* Side color */
+    background-color: #00ffccc0; /* Side color */
     top: 0;
     left: 50%;
     transform: translateX(-50%);
