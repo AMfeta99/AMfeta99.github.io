@@ -5,18 +5,22 @@ body {
 }
 
 #header-background {
-    background-image: url("../../images/ML_topics.png");
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/ML_topics.png");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/ML_topics.png");
+    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/ML_topics.png");
+    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/ML_topics.png");
+    background-attachment: fixed;
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 50px 0;
+    padding: 12em 0 10em 0;
 }
 
 h2 {
     margin: 0;
     font-size: 2.5rem;
 }
-
 
 .inner {
     width: 80%;
@@ -49,10 +53,9 @@ h2 {
     text-align: center;
 }
 
-
 .features h3 {
     margin: 0 0 10px;
-    font-size: 1.rem;
+    font-size: 1.2rem;
 }
 
 .features p {
@@ -112,11 +115,11 @@ h2 {
     z-index: -1;
 }
 
-.item:nth-child(odd)::before {
+.item:nth-child(odd::before) {
     left: calc(0% - 5px);
 }
 
-.item:nth-child(even)::before {
+.item:nth-child(even::before) {
     left: calc(100% - 5px);
 }
 
@@ -144,4 +147,36 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    #header-background {
+        padding: 6em 0 5em 0;
+    }
+    
+    .features li {
+        width: 100%;
+    }
+
+    .path {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item::before {
+        display: none;
+    }
+
+    .item img {
+        margin: 0 0 1rem 0;
+    }
+
+    .item h5 {
+        margin: 0 0 1rem 0;
+    }
 }
