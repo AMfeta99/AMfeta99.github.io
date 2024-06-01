@@ -205,11 +205,19 @@ ul {
         margin: 0 0 1rem 0;
     }
 
+    .item h6 {
+        margin: 0 0 1rem 0;
+    }
+
     .time_line img {
         margin: 0 0 1rem 0;
     }
 
     .time_line h5 {
+        margin: 0 0 1rem 0;
+    }
+
+    .time_line h6 {
         margin: 0 0 1rem 0;
     }
 }
