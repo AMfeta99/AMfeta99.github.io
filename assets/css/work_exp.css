@@ -158,14 +158,9 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 1rem; /* Adjust margin */
+    margin-right: 1rem; 
 }
 
-.time_line img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
 
 .time_line h5 {
     margin: 0;
@@ -173,7 +168,7 @@ h2 {
 
 .time_line h6 {
     margin: 0;
-    margin-top: auto; /* Align to bottom */
+    margin-top: auto; 
 }
 
 ul {
