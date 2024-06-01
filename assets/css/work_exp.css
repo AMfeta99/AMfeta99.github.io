@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-#main > .header-background {
+#header-background {
     background-image: url("../../images/ML_topics.png");
     background-position: center center;
     background-size: cover;
