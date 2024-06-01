@@ -13,7 +13,49 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 10em 0 10em 0;
+    padding: 8em 0 8em 0;
+}
+
+#header-background h2 {
+    font-size: 1.75em;
+    margin: 0 0 0.5em 0;
+}
+
+@media screen and (max-width: 1680px) {
+
+    #header-background {
+        padding: 10em 0 8em 0 ;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    #header-background {
+        padding: 8em 3em 6em 3em ;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    #header-background{
+        padding: 10em 3em 8em 3em ;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    #header-background {
+        padding: 5em 3em 3em 3em ;
+    }
+
+    #header-backgroundr h2 {
+            font-size: 1.25em;
+            margin: 0 0 1em 0;
+        }
+
 }
 
 h2 {
