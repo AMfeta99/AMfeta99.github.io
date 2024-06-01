@@ -133,7 +133,7 @@ h2 {
 
 .item {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Adjusted for better vertical alignment */
     background-color: rgba(33, 178, 166, 0.05); 
     padding: 1rem;
     border-radius: 8px;
@@ -158,6 +158,11 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex: 1; /* Make the <ul> take remaining space */
+}
+
+ul li {
+    margin-bottom: 0.5rem; /* Adjust spacing between list items */
 }
 
 /* Media queries for mobile responsiveness */
@@ -175,8 +180,7 @@ ul {
     }
 
     .item {
-        flex-direction: column;
-        text-align: center;
+        text-align: center; /* Adjusted for better alignment */
     }
 
     .item img {
