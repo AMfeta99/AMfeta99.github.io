@@ -225,13 +225,13 @@ ul {
 }
 
 
-
+/*
 #repository_git {
     background-color: #f0f0f0; 
 }
+*/
 
-
-#repository_git p {
+#repository_git li p {
     font-size: 0.9em; 
 }
 
