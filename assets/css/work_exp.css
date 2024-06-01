@@ -153,10 +153,6 @@ h2 {
     border-radius: 50%;
 }
 
-.item:nth-child(even) img {
-    margin-right: 0;
-    margin-left: 1rem;
-}
 
 .item h5 {
     margin: 0 1rem 0 0;
@@ -195,5 +191,21 @@ ul {
 
     .item h5 {
         margin: 0 0 1rem 0;
+    }
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between items */
+}
+.flex-item {
+    flex: 1;
+    min-width: 200px; /* Adjust as needed */
+}
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 100%;
     }
 }
