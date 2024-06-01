@@ -155,17 +155,6 @@ h2 {
     text-align: right;
 }
 
-.item::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 100%;
-    background-color: #00ffccc0; /* Side color */
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-}
 
 .item:nth-child(odd::before) {
     left: calc(0% - 5px);
