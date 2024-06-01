@@ -115,7 +115,7 @@ h2 {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-   /* background-color: #f5f5f5;*/
+    /* background-color: #f5f5f5;*/
 }
 
 .inner {
@@ -150,11 +150,9 @@ h2 {
     border-radius: 50%;
 }
 
-
-.item h5 {
-    margin: 0 1rem 0 0;
+.item h4, .item h5 {
+    margin: 0;
 }
-
 
 ul {
     list-style: none;
@@ -181,28 +179,15 @@ ul {
         text-align: center;
     }
 
-
     .item img {
         margin: 0 0 1rem 0;
     }
 
-    .item h5 {
-        margin: 0 0 1rem 0;
+    .item h4 {
+        margin: 0 0 0.5rem 0;
     }
-}
 
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Adds space between items */
-}
-.flex-item {
-    flex: 1;
-    min-width: 200px; /* Adjust as needed */
-}
-@media (max-width: 768px) {
-    .flex-item {
-        flex: 100%;
+    .item h5 {
+        margin: 0;
     }
 }
