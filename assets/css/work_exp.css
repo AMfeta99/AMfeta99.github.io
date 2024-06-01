@@ -5,7 +5,7 @@ body {
 }
 
 .header-background {
-    background: url('images/ML_topics.png') no-repeat center center;
+    background: url('../../images/ML_topics.png') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
