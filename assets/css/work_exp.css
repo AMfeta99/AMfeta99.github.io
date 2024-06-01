@@ -214,6 +214,18 @@ ul {
     }
 }
 
+
+.text_descrip {
+    display: none;
+    margin-top: 10px;
+}
+.position_title {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
