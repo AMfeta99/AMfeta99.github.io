@@ -146,24 +146,6 @@ h2 {
     z-index: 1;
 }
 
-.item:nth-child(odd) {
-    justify-content: flex-start;
-}
-
-.item:nth-child(even) {
-    justify-content: flex-end;
-    text-align: right;
-}
-
-
-.item:nth-child(odd::before) {
-    left: calc(0% - 5px);
-}
-
-.item:nth-child(even::before) {
-    left: calc(100% - 5px);
-}
-
 .item img {
     width: 60px;
     height: 60px;
@@ -180,9 +162,6 @@ h2 {
     margin: 0 1rem 0 0;
 }
 
-.item:nth-child(even) h5 {
-    margin: 0 0 0 1rem;
-}
 
 ul {
     list-style: none;
@@ -209,9 +188,6 @@ ul {
         text-align: center;
     }
 
-    .item::before {
-        display: none;
-    }
 
     .item img {
         margin: 0 0 1rem 0;
