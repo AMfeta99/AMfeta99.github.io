@@ -5,10 +5,9 @@ body {
 }
 
 #main > .header-background {
-    background-image: url("../../images/ML_topics.png") no-repeat;
+    background-image: url("../../images/ML_topics.png");
     background-position: center center;
     background-size: cover;
-    color: white;
     text-align: center;
     padding: 50px 0;
 }
@@ -50,15 +49,10 @@ h2 {
     text-align: center;
 }
 
-.features img.logo {
-    width: 100px;
-    height: auto;
-    margin-bottom: 20px;
-}
 
 .features h3 {
     margin: 0 0 10px;
-    font-size: 1.5rem;
+    font-size: 1.rem;
 }
 
 .features p {
