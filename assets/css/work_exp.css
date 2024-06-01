@@ -221,19 +221,30 @@ ul {
 }
 .position_title {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: underline dotted;
 }
 
 
 
+#repository_git {
+    background-color: #f0f0f0; 
+}
+
+
+#repository_git p {
+    font-size: 0.9em; 
+}
+
+
+/*cv and recommendation letters*/
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adds space between items */
+    gap: 20px; 
 }
 .flex-item {
     flex: 1;
-    min-width: 200px; /* Adjust as needed */
+    min-width: 200px; 
 }
 @media (max-width: 768px) {
     .flex-item {
