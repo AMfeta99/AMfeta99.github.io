@@ -150,8 +150,9 @@ h2 {
     border-radius: 50%;
 }
 
-.item h4, .item h5 {
+.item h5 {
     margin: 0;
+    flex: 1; /* Take up remaining space */
 }
 
 ul {
@@ -189,5 +190,6 @@ ul {
 
     .item h5 {
         margin: 0;
+        flex: none; /* Reset flex to default */
     }
 }
