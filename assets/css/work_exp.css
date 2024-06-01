@@ -195,3 +195,19 @@ ul li {
         margin: 0;
     }
 }
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between items */
+}
+.flex-item {
+    flex: 1;
+    min-width: 200px; /* Adjust as needed */
+}
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 100%;
+    }
+}
