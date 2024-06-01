@@ -134,7 +134,7 @@ h2 {
 .item {
     display: flex;
     align-items: center;
-    background-color: rgba(33, 178, 166, 0.05); /* Translucent background */
+    background-color: rgba(33, 178, 166, 0.05); 
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -150,9 +150,8 @@ h2 {
     border-radius: 50%;
 }
 
-.item h5 {
+.item h4, .item h5 {
     margin: 0;
-    flex: 1; /* Take up remaining space */
 }
 
 ul {
@@ -190,6 +189,5 @@ ul {
 
     .item h5 {
         margin: 0;
-        flex: none; /* Reset flex to default */
     }
 }
