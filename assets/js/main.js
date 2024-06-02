@@ -1,8 +1,3 @@
-/*
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
@@ -64,6 +59,17 @@
 				target: $body,
 				visibleClass: 'is-menu-visible'
 			});
+
+	// Expand/collapse nested menu on mobile
+		$(document).ready(function() {
+			$('#menu ul > li > a').click(function(event) {
+				var $parentLi = $(this).parent('li');
+				if ($parentLi.find('ul').length > 0) {
+					event.preventDefault();
+					$parentLi.toggleClass('expanded');
+				}
+			});
+		});
 
 	// Header.
 		if ($banner.length > 0
