@@ -238,10 +238,10 @@ ul {
 }
 
 #repository_git li h6{
-    font-size: 0.9em; 
-    margin: 0 0 0 0;
+    margin: 0 0 1em 0;
     text-transform: none;
     font-weight: 600;
+    letter-spacing: 0.1em;
 }
 
 #repository_git h3 {
