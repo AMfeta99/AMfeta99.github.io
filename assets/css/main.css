@@ -3442,7 +3442,7 @@ input, select, textarea {
 			padding: 0;
 		}
 		
-		#menu ul li.expanded ul {
+		#menu ul li:hover ul {
 			display: block;
 		}
 		
@@ -3460,7 +3460,6 @@ input, select, textarea {
 		#menu ul li ul li a:hover {
 			background-color: #898a8a;
 		}
-		
 		
 
 /* Header */
