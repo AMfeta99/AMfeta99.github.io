@@ -234,7 +234,20 @@ ul {
 
 #repository_git li p {
     font-size: 0.9em; 
+    margin: 0 0 0 0;
 }
+
+#repository_git h6 p {
+    font-size: 0.9em; 
+    margin: 0 0 0 0;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+#repository_git h3 {
+    text-transform: lowercase;
+}
+
 
 
 /*cv and recommendation letters*/
