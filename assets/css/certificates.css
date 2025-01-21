@@ -8,6 +8,10 @@
     justify-items: center; /* Centraliza os itens horizontalmente */
 }
 
+ul li {
+    padding-left: 0 em; 
+}
+
 /* Estilo para os itens da grade */
 .features2 li {
     background: #1e1e1e;
@@ -15,8 +19,8 @@
     overflow: hidden;
     text-align: center;
     /*height: 350px;*/
-    /* width: 100%; Garante largura consistente */
-    display: flex;
+    width: 100%; /* Garante largura consistente */
+    /* display: flex; */
     flex-direction: column;
     justify-content: flex-start;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
