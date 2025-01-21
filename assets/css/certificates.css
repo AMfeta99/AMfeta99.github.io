@@ -58,7 +58,7 @@
 }
 
 /* Estilo do título */
-.image-container h3 {
+.certificate-card h3 {
     display: flex; /* Necessário para aplicar justify-content */
     justify-content: space-evenly; /* Espaçamento uniforme dentro do h3 */
     flex-direction: column; /* Certifica que o texto é tratado como coluna */
