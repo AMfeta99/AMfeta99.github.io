@@ -1,0 +1,54 @@
+/* Centraliza os elementos e garante o mesmo tamanho */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.features li {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.image-container {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o zoom */
+    object-position: center; /* Centraliza a imagem */
+    transition: transform 0.3s ease; /* Animação para o hover */
+}
+
+.certificate-card:hover .image-container img {
+    transform: scale(1.1); /* Aplica o zoom ao passar o mouse */
+}
+
+h3 {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+}
