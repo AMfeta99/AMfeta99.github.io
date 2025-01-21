@@ -16,7 +16,7 @@
     text-align: center;
     height: 400px; /* Define uma altura fixa para os cartões */
     width: 100%; /* Garante largura consistente */
-    display: flex; /* Usa flexbox para centralizar */
+    /* display: flex;  Usa flexbox para centralizar */
     flex-direction: column;
     justify-content: flex-start;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
@@ -63,6 +63,6 @@
     color: #fff;
     font-size: 1em;
     font-weight: 700; /* Usa uma fonte mais pesada */
-    text-transform: uppercase;
+    text-transform: none;
     text-align: center;
 }
