@@ -37,7 +37,7 @@
 /* Contêiner da imagem */
 .image-container {
     width: 100%;
-    height: 50%; /* Metade da altura do cartão */
+    height: 70%; /* Metade da altura do cartão */
     overflow: hidden;
     position: relative;
 }
