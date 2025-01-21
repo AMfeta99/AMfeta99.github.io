@@ -66,7 +66,7 @@
     width: 100%; /* Alinha dentro do espaço do cartão */
     margin: 0; /* Remove margens padrão */
     font-weight: 700; /* Mantém aparência */
-    text-transform: none;
+    text-transform: capitalize;
 }
 
 
