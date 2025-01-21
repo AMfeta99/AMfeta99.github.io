@@ -14,7 +14,7 @@
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    height: 350px;
+    /*height: 350px;*/
     /* width: 100%; Garante largura consistente */
     display: flex;
     flex-direction: column;
