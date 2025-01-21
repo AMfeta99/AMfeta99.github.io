@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Espaça o conteúdo uniformemente */
+    justify-content: flex-start; /* Espaça o conteúdo uniformemente */
     height: 100%;
 }
 
@@ -59,10 +59,14 @@
 
 /* Estilo do título */
 .image-container h3 {
-    margin: 5px 0; /* Reduz o espaço acima e abaixo do texto */
-    color: #fff;
-    font-size: 1em;
-    font-weight: 700; /* Usa uma fonte mais pesada */
-    text-transform: none;
+    display: flex; /* Necessário para aplicar justify-content */
+    justify-content: space-evenly; /* Espaçamento uniforme dentro do h3 */
+    flex-direction: column; /* Certifica que o texto é tratado como coluna */
     text-align: center;
+    width: 100%; /* Alinha dentro do espaço do cartão */
+    margin: 0; /* Remove margens padrão */
+    font-weight: 700; /* Mantém aparência */
+    text-transform: none;
 }
+
+
