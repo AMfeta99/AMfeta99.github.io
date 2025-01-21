@@ -16,7 +16,7 @@
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    padding-left: 0 em; 
+    padding-left: none; 
     /*height: 350px;*/
     width: 100%; /* Garante largura consistente */
     /* display: flex; */
@@ -24,6 +24,11 @@
     justify-content: flex-start;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
+
+/*.image-container h3{
+
+}
+*/
 
 /* Estilo do cartão */
 .certificate-card {
