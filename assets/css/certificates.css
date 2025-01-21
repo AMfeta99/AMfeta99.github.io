@@ -44,7 +44,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover; /* Faz o zoom na imagem */
-    object-position: center; /* Centraliza a imagem */
+    object-position: bottom; /* Centraliza a imagem */
     transition: transform 0.3s ease; /* Animação ao passar o mouse */
 }
 
@@ -53,10 +53,11 @@
     transform: scale(1.1); /* Amplia a imagem no hover */
 }
 
-/* Estilo do título */
+/* Estilo do título 
 h3{
     margin: 10px 0;
     color: #fff;
     font-size: 1.2em;
     font-weight: 500;
 }
+*/
