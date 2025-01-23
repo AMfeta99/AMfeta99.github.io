@@ -91,3 +91,7 @@
     padding-left: 20px;
     line-height: 1.2em; /* Reduce spacing between lines */
 }
+
+.hidden img {
+    display: none;
+}
