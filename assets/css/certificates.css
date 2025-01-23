@@ -71,3 +71,17 @@
 }
 
 
+.descricao {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.descricao.hidden {
+    max-height: 0;
+    visibility: hidden;
+}
+
+.descricao:not(.hidden) {
+    max-height: 500px; /* Ajuste conforme necessário */
+    visibility: visible;
+}
