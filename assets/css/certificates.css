@@ -80,7 +80,7 @@
 }
 
 .descricao:not(.hidden) {
-    max-height: 500px; /* Adjust as needed */
+    max-height: 400px; /* Adjust as needed */
     opacity: 1;
     visibility: visible;
 }
