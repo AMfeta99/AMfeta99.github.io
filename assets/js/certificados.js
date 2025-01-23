@@ -1,6 +1,7 @@
 function toggleContent(element) {
-    const imageContainer = element.previousElementSibling;
-    const descricao = element.nextElementSibling;
+    const parentCard = element.parentElement;
+    const imageContainer = parentCard.querySelector('.image-container');
+    const descricao = parentCard.querySelector('.descricao');
 
     // Toggle visibility of the image
     if (imageContainer) {
