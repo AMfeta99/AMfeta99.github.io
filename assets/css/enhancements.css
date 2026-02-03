@@ -4,7 +4,7 @@
 
 /* CSS Variables for Theme Colors */
 :root {
-    /* Light Mode Colors */
+    /* Theme Colors */
     --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --accent-color: #667eea;
     --accent-hover: #764ba2;
@@ -14,58 +14,17 @@
     --text-secondary: rgba(255, 255, 255, 0.7);
     --card-bg: rgba(255, 255, 255, 0.05);
     --card-border: rgba(255, 255, 255, 0.1);
-    
+
     /* Gradients */
     --gradient-purple-blue: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-orange-pink: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     --gradient-green-blue: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    
+
     /* Shadows */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
     --shadow-glow: 0 0 20px rgba(102, 126, 234, 0.3);
-}
-
-/* Dark Mode Variables */
-body.dark-mode {
-    --bg-primary: #0f1419;
-    --bg-secondary: #1a1f26;
-    --text-primary: #e6e6e6;
-    --text-secondary: rgba(230, 230, 230, 0.7);
-    --card-bg: rgba(255, 255, 255, 0.03);
-    --card-border: rgba(255, 255, 255, 0.08);
-}
-
-/* ========================================
-   DARK MODE TOGGLE BUTTON
-   ======================================== */
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10000;
-    background: var(--primary-gradient);
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: var(--shadow-md);
-    transition: all 0.3s ease;
-}
-
-.theme-toggle:hover {
-    transform: scale(1.1) rotate(15deg);
-    box-shadow: var(--shadow-glow);
-}
-
-.theme-toggle i {
-    font-size: 1.2em;
-    color: white;
 }
 
 /* ========================================
@@ -239,8 +198,13 @@ body.dark-mode {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* ========================================
@@ -314,15 +278,15 @@ body.dark-mode {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         gap: 1em;
     }
-    
+
     .tech-item {
         padding: 1em;
     }
-    
+
     .tech-item i {
         font-size: 2em;
     }
-    
+
     .theme-toggle,
     .back-to-top {
         width: 45px;
@@ -346,9 +310,12 @@ body.dark-mode {
    PULSE ANIMATION FOR HIGHLIGHTS
    ======================================== */
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.7;
     }
