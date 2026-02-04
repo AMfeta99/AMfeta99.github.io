@@ -379,41 +379,7 @@ figcaption {
     }
 }
 
-/* ===================================
-   DARK MODE SUPPORT
-   =================================== */
-
-@media (prefers-color-scheme: dark) {
-    .publication-card {
-        background: #1a202c;
-        border-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .publication-title {
-        color: #f7fafc;
-    }
-
-    .publication-abstract {
-        color: #e2e8f0;
-    }
-
-    .publication-meta {
-        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-    }
-
-    .journal-info {
-        color: #cbd5e0;
-    }
-
-    figcaption {
-        background: #2d3748;
-        color: #a0aec0;
-    }
-
-    .publication-tags {
-        border-top-color: #2d3748;
-    }
-}
+/* Dark mode support removed to maintain consistent light-themed card design across all devices */
 
 /* ===================================
    ANIMATIONS
