@@ -90,100 +90,175 @@
 
 		<!-- Main -->
 		<article id="main">
-
-
-			<header>
-				<h2> Publications </h2>
+			<header class="publications-header">
+				<h2>Publications</h2>
+				<p class="subtitle">Research contributions in AI, deep learning, and medical signal processing</p>
 			</header>
 
 			<section class="wrapper style5">
+				<div class="publications-container">
 
+					<!-- Publication Card 1 -->
+					<article class="publication-card">
+						<div class="card-content">
+							<div class="card-header">
+								<span class="publication-badge">Journal Article</span>
+								<span class="publication-year">2024</span>
+							</div>
 
-				<div class="inner">
-					<h4 class="title">Detection of Interictal epileptiform discharges with semi-supervised deep learning
-					</h4>
-					<figure>
-						<img class="paper-img" src="images/semi-supervised_epi_detection.jpg"
-							alt="Epileptiform Discharges">
-						<figcaption>Fig 2. Graphical summary representing unsupervised and semi-supervised deep learning
-							methods</figcaption>
-					</figure>
-					<div class="description">
-						<h6 style="color: #76ddff">
-							<a href="https://doi.org/10.1016/j.bspc.2023.105610">
-								Ana Maria Amaro de Sousa, Michel J.A.M. van Putten, Stéphanie van den Berg, Maryam Amir
-								Haeri, Detection of Interictal epileptiform discharges with semi-supervised deep
-								learning, Biomedical Signal Processing and Control, Volume 88, Part B, 2024
-							</a>
-						</h6>
-						<p>Interictal discharges (IEDs) in EEG recordings are important signatures of epilepsy as their
-							presence is strongly associated with an increased risk of seizures. IEDs are relatively
-							short-duration events (typically 70-250 ms) that can be viewed as stochastic anomalies in
-							such recordings. Currently, visual analysis of the EEG by clinical experts is the gold
-							standard. This process, however, is time-consuming, error-prone, and associated with a long
-							learning period. <span class="clickable"> (Click to read more)</span></p>
-						<div class="remaining-content">
-							<p>Automating the detection of IEDs has the potential to significantly reduce review time
-								and may serve to complement the visual analysis. Supervised deep learning methods have
-								shown potential for this purpose, but the scarceness of annotated data has limited their
-								performance, which motivates exploring unsupervised and semi-supervised approaches that
-								do not require (extensive) expert annotations.</p>
-							<p>We trained different unsupervised deep learning models, Autoencoders (AE), and
-								Variational Autoencoders (VAE) for anomaly (IED) detection in these recordings. Our work
-								shows that unsupervised approaches and other approaches with limited supervision perform
-								satisfactorily and have the potential to assist the visual assessment of interictal
-								discharges in epilepsy diagnostics.</p>
+							<h3 class="publication-title">Detection of Interictal epileptiform discharges with
+								semi-supervised deep learning</h3>
+
+							<figure class="publication-figure">
+								<img class="paper-img" src="images/semi-supervised_epi_detection.jpg"
+									alt="Graphical summary of unsupervised and semi-supervised deep learning methods for epileptiform discharge detection">
+								<figcaption>Graphical summary representing unsupervised and semi-supervised deep
+									learning methods</figcaption>
+							</figure>
+
+							<div class="publication-meta">
+								<a href="https://doi.org/10.1016/j.bspc.2023.105610" class="publication-link"
+									target="_blank" rel="noopener noreferrer">
+									<svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round">
+										<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+										<polyline points="15 3 21 3 21 9"></polyline>
+										<line x1="10" y1="14" x2="21" y2="3"></line>
+									</svg>
+									Ana Maria Amaro de Sousa, Michel J.A.M. van Putten, Stéphanie van den Berg, Maryam
+									Amir Haeri
+								</a>
+								<p class="journal-info">Biomedical Signal Processing and Control, Volume 88, Part B,
+									2024</p>
+							</div>
+
+							<div class="publication-abstract">
+								<p>Interictal discharges (IEDs) in EEG recordings are important signatures of epilepsy
+									as their presence is strongly associated with an increased risk of seizures. IEDs
+									are relatively short-duration events (typically 70-250 ms) that can be viewed as
+									stochastic anomalies in such recordings. Currently, visual analysis of the EEG by
+									clinical experts is the gold standard. This process, however, is time-consuming,
+									error-prone, and associated with a long learning period.</p>
+
+								<div class="expandable-content">
+									<p>Automating the detection of IEDs has the potential to significantly reduce review
+										time and may serve to complement the visual analysis. Supervised deep learning
+										methods have shown potential for this purpose, but the scarceness of annotated
+										data has limited their performance, which motivates exploring unsupervised and
+										semi-supervised approaches that do not require (extensive) expert annotations.
+									</p>
+									<p>We trained different unsupervised deep learning models, Autoencoders (AE), and
+										Variational Autoencoders (VAE) for anomaly (IED) detection in these recordings.
+										Our work shows that unsupervised approaches and other approaches with limited
+										supervision perform satisfactorily and have the potential to assist the visual
+										assessment of interictal discharges in epilepsy diagnostics.</p>
+								</div>
+
+								<button class="read-more-btn" aria-label="Read more about this publication">
+									<span class="btn-text">Read more</span>
+									<svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg>
+								</button>
+							</div>
+
+							<div class="publication-tags">
+								<span class="tag">Deep Learning</span>
+								<span class="tag">EEG Analysis</span>
+								<span class="tag">Epilepsy Detection</span>
+								<span class="tag">Semi-Supervised Learning</span>
+							</div>
 						</div>
-					</div>
-				</div>
+					</article>
 
+					<!-- Publication Card 2 -->
+					<article class="publication-card">
+						<div class="card-content">
+							<div class="card-header">
+								<span class="publication-badge">Master's Thesis</span>
+								<span class="publication-year">2022</span>
+							</div>
 
-				<div class="inner">
-					<h4 class="title">Learning to write medical reports from EEG data</h4>
-					<figure>
-						<img class="paper-img" src="images/thesis_img.jpg" alt="EEG Data">
-						<figcaption>Fig 1. What if we could “translate” what the brain is saying? System schema of the
-							research hypotheses</figcaption>
-					</figure>
-					<div class="description">
-						<h6 style="color: #76ddff">
-							<a href="https://repositorio-aberto.up.pt/handle/10216/144617">
-								Maria Amaro de Sousa, A. (2022). Learning to write medical reports from EEG data.
-								Masters dissertation. Faculty of Engineering of the University of Porto.
-							</a>
-						</h6>
-						<p>Electroencephalography (EEG) is an essential tool for the diagnosis and management of
-							epilepsy, one of the most prevalent neurological disorders in the world, characterized by an
-							increased likelihood of seizures. However, these periods of abnormal brain activity (ictal
-							EEG) may not occur often, so the diagnosis is usually made by visual analysis of the EEG in
-							interictal periods. During this analysis, the neurologist summarizes the findings and
-							diagnosis in a clinical report. Although this is a current practice, it entails several
-							disadvantages that motivate the development of automatic auxiliary algorithms that can
-							streamline clinical workflow, reduce subjectivity, and potentially improve diagnosis. <span
-								class="clickable"> (Click to read more)</span></p>
-						<div class="remaining-content">
-							<p>To address these shortcomings in EEG analysis and reporting, we apply DL methods adapting
-								state-of-the-art image and video captioning approaches to generate automated preliminary
-								clinical reports directly from the EEG signal. For that, we develop several captioning
-								architectures. In all of them, a recurrent model is used as a decoder and the encoder is
-								a previously trained convolutional model (VGG16) for classification. Implemented
-								captioning models differ in the aggregation EEG embeddings methods used to extract and
-								summarize the entire recording. This includes EEG average embedding-based,
-								recurrent-based, attention-based, and multi-stream-based methods. The performance of the
-								models was evaluated qualitatively by analyzing the reports and quantitatively by
-								calculating common natural language processing metrics.</p>
-							<p>We have shown that it is possible to generate reports from EEG data, but there is still
-								space for improvement. We innovate by designing architectures for EEG captioning based
-								on other architectures that have proven effective in other fields. There is great
-								potential in the use of DL-based methods, but obtaining a model capable of diversifying
-								language, dealing with the diversity of clinical conditions, and generating a report
-								that effectively describes all EEG events are some challenges that must be tackled
-								before implementing in the clinic.</p>
+							<h3 class="publication-title">Learning to write medical reports from EEG data</h3>
+
+							<figure class="publication-figure">
+								<img class="paper-img" src="images/thesis_img.jpg"
+									alt="System schema showing translation of brain signals to medical reports">
+								<figcaption>What if we could "translate" what the brain is saying? System schema of the
+									research hypotheses</figcaption>
+							</figure>
+
+							<div class="publication-meta">
+								<a href="https://repositorio-aberto.up.pt/handle/10216/144617" class="publication-link"
+									target="_blank" rel="noopener noreferrer">
+									<svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round">
+										<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+										<polyline points="15 3 21 3 21 9"></polyline>
+										<line x1="10" y1="14" x2="21" y2="3"></line>
+									</svg>
+									Maria Amaro de Sousa, A.
+								</a>
+								<p class="journal-info">Faculty of Engineering of the University of Porto, Masters
+									Dissertation</p>
+							</div>
+
+							<div class="publication-abstract">
+								<p>Electroencephalography (EEG) is an essential tool for the diagnosis and management of
+									epilepsy, one of the most prevalent neurological disorders in the world,
+									characterized by an increased likelihood of seizures. However, these periods of
+									abnormal brain activity (ictal EEG) may not occur often, so the diagnosis is usually
+									made by visual analysis of the EEG in interictal periods. During this analysis, the
+									neurologist summarizes the findings and diagnosis in a clinical report. Although
+									this is a current practice, it entails several disadvantages that motivate the
+									development of automatic auxiliary algorithms that can streamline clinical workflow,
+									reduce subjectivity, and potentially improve diagnosis.</p>
+
+								<div class="expandable-content">
+									<p>To address these shortcomings in EEG analysis and reporting, we apply DL methods
+										adapting state-of-the-art image and video captioning approaches to generate
+										automated preliminary clinical reports directly from the EEG signal. For that,
+										we develop several captioning architectures. In all of them, a recurrent model
+										is used as a decoder and the encoder is a previously trained convolutional model
+										(VGG16) for classification. Implemented captioning models differ in the
+										aggregation EEG embeddings methods used to extract and summarize the entire
+										recording. This includes EEG average embedding-based, recurrent-based,
+										attention-based, and multi-stream-based methods. The performance of the models
+										was evaluated qualitatively by analyzing the reports and quantitatively by
+										calculating common natural language processing metrics.</p>
+									<p>We have shown that it is possible to generate reports from EEG data, but there is
+										still space for improvement. We innovate by designing architectures for EEG
+										captioning based on other architectures that have proven effective in other
+										fields. There is great potential in the use of DL-based methods, but obtaining a
+										model capable of diversifying language, dealing with the diversity of clinical
+										conditions, and generating a report that effectively describes all EEG events
+										are some challenges that must be tackled before implementing in the clinic.</p>
+								</div>
+
+								<button class="read-more-btn" aria-label="Read more about this publication">
+									<span class="btn-text">Read more</span>
+									<svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+										viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg>
+								</button>
+							</div>
+
+							<div class="publication-tags">
+								<span class="tag">Natural Language Processing</span>
+								<span class="tag">Medical AI</span>
+								<span class="tag">EEG Analysis</span>
+								<span class="tag">Report Generation</span>
+							</div>
 						</div>
-					</div>
+					</article>
+
 				</div>
-
-
 			</section>
 		</article>
 
