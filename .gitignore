@@ -1,2 +1,25 @@
+# OS
 .DS_Store
-.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Python (validation scripts)
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+
+# Build output (if any)
+dist/
+.cache/
+
+# Git
+.opencode/

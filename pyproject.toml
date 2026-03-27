@@ -1,0 +1,22 @@
+[project]
+name = "amfeta99.github.io"
+version = "0.1.0"
+description = "Personal portfolio website - Ana Maria Sousa"
+requires-python = ">=3.10"
+
+[dependency-groups]
+test = [
+    "html5validator",
+    "pytest",
+    "beautifulsoup4",
+    "requests",
+]
+dev = ["pre-commit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.html5validator]
+files = ["*.html"]
+ignore = ["WCAG2A.AA"]
