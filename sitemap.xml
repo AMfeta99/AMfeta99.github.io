@@ -6,23 +6,23 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://amfeta99.github.io/src/me.html</loc>
+        <loc>https://amfeta99.github.io/me.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://amfeta99.github.io/src/academic&amp;career.html</loc>
+        <loc>https://amfeta99.github.io/academic&amp;career.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://amfeta99.github.io/src/proj.html</loc>
+        <loc>https://amfeta99.github.io/proj.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://amfeta99.github.io/src/pub.html</loc>
+        <loc>https://amfeta99.github.io/pub.html</loc>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
     </url>
 </urlset>

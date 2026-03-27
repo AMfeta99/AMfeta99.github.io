@@ -16,8 +16,7 @@ def get_all_anchor_ids(html_file):
 
 def test_all_internal_links_valid():
     """Verify all internal links point to existing files."""
-    src_folder = Path("src")
-    html_files = list(src_folder.glob("*.html"))
+    html_files = list(Path(".").glob("*.html"))
     errors = []
 
     # Build anchor map for all HTML files
@@ -59,16 +58,16 @@ def test_all_internal_links_valid():
                 if (base_file, anchor) in known_cross_file_anchors:
                     continue
 
-                # Check relative to src folder
-                target = src_folder / base_file
+                # Check if target file exists
+                target = Path(base_file)
                 if not target.exists():
                     errors.append(f"{html_file.name}: broken link -> {href}")
                 elif anchor and anchor not in anchor_map.get(base_file, set()):
                     errors.append(f"{html_file.name}: broken anchor -> {href}")
                 continue
 
-            # Check internal links - relative to src folder
-            target = src_folder / href
+            # Check internal links
+            target = Path(href)
             if not target.exists():
                 errors.append(f"{html_file.name}: broken link -> {href}")
 
@@ -78,11 +77,11 @@ def test_all_internal_links_valid():
 def test_html_files_exist():
     """Verify all HTML files are present."""
     expected_files = [
-        "src/index.html",
-        "src/me.html",
-        "src/academic&career.html",
-        "src/proj.html",
-        "src/pub.html",
+        "index.html",
+        "me.html",
+        "academic&career.html",
+        "proj.html",
+        "pub.html",
     ]
 
     for filename in expected_files:

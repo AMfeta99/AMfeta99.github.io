@@ -17,9 +17,8 @@ def get_all_anchor_ids(html_file):
 
 def validate_links():
     """Check that all internal links point to existing files and anchors."""
-    # HTML files are in src/ folder
-    src_folder = Path("src")
-    html_files = list(src_folder.glob("*.html"))
+    # HTML files are in root folder
+    html_files = list(Path(".").glob("*.html"))
     errors = []
 
     # Build anchor map for all HTML files (key: filename only)
@@ -59,16 +58,16 @@ def validate_links():
                 if (base_file, anchor) in known_cross_file_anchors:
                     continue
 
-                # Check relative to src folder
-                target = src_folder / base_file
+                # Check if target file exists
+                target = Path(base_file)
                 if not target.exists():
                     errors.append(f"{html_file.name}: broken link -> {href}")
                 elif anchor and anchor not in anchor_map.get(base_file, set()):
                     errors.append(f"{html_file.name}: broken anchor -> {href}")
                 continue
 
-            # Check internal links - relative to src folder
-            target = src_folder / href
+            # Check internal links
+            target = Path(href)
             if not target.exists():
                 errors.append(f"{html_file.name}: broken link -> {href}")
 
