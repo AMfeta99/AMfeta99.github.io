@@ -17,17 +17,23 @@ def get_all_anchor_ids(html_file):
 
 def validate_links():
     """Check that all internal links point to existing files and anchors."""
-    # Include all HTML files (including snippet files used as includes)
-    html_files = list(Path(".").glob("*.html"))
+    # HTML files are in src/ folder
+    src_folder = Path("src")
+    html_files = list(src_folder.glob("*.html"))
     errors = []
 
-    # Build anchor map for all HTML files
+    # Build anchor map for all HTML files (key: filename only)
     anchor_map = {}
     for html_file in html_files:
         anchor_map[html_file.name] = get_all_anchor_ids(html_file)
 
+    # Also check snippets folder if it exists
+    snippets_folder = Path("assets/snippets")
+    if snippets_folder.exists():
+        for snippet in snippets_folder.glob("*.html"):
+            anchor_map[snippet.name] = get_all_anchor_ids(snippet)
+
     # Known cross-file references (snippets included via clipboard/paste)
-    # tech-stack-section.html is a snippet that gets included in index.html
     known_cross_file_anchors = {
         ("index.html", "tech_skills"),  # In tech-stack-section.html (snippet)
     }
@@ -43,7 +49,7 @@ def validate_links():
 
             # Handle pure anchors (e.g., #top)
             if href.startswith("#"):
-                continue  # Valid within same page
+                continue
 
             # Handle links with anchors (e.g., index.html#awards)
             if "#" in href:
@@ -53,14 +59,17 @@ def validate_links():
                 if (base_file, anchor) in known_cross_file_anchors:
                     continue
 
-                if not Path(base_file).exists():
+                # Check relative to src folder
+                target = src_folder / base_file
+                if not target.exists():
                     errors.append(f"{html_file.name}: broken link -> {href}")
                 elif anchor and anchor not in anchor_map.get(base_file, set()):
                     errors.append(f"{html_file.name}: broken anchor -> {href}")
                 continue
 
-            # Check internal links
-            if not Path(href).exists():
+            # Check internal links - relative to src folder
+            target = src_folder / href
+            if not target.exists():
                 errors.append(f"{html_file.name}: broken link -> {href}")
 
     if errors:

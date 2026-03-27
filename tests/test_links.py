@@ -16,13 +16,20 @@ def get_all_anchor_ids(html_file):
 
 def test_all_internal_links_valid():
     """Verify all internal links point to existing files."""
-    html_files = list(Path(".").glob("*.html"))
+    src_folder = Path("src")
+    html_files = list(src_folder.glob("*.html"))
     errors = []
 
     # Build anchor map for all HTML files
     anchor_map = {}
     for html_file in html_files:
         anchor_map[html_file.name] = get_all_anchor_ids(html_file)
+
+    # Also check snippets folder if it exists
+    snippets_folder = Path("assets/snippets")
+    if snippets_folder.exists():
+        for snippet in snippets_folder.glob("*.html"):
+            anchor_map[snippet.name] = get_all_anchor_ids(snippet)
 
     # Known cross-file references (snippets included via clipboard/paste)
     known_cross_file_anchors = {
@@ -52,14 +59,17 @@ def test_all_internal_links_valid():
                 if (base_file, anchor) in known_cross_file_anchors:
                     continue
 
-                if not Path(base_file).exists():
+                # Check relative to src folder
+                target = src_folder / base_file
+                if not target.exists():
                     errors.append(f"{html_file.name}: broken link -> {href}")
                 elif anchor and anchor not in anchor_map.get(base_file, set()):
                     errors.append(f"{html_file.name}: broken anchor -> {href}")
                 continue
 
-            # Check internal links exist
-            if not Path(href).exists():
+            # Check internal links - relative to src folder
+            target = src_folder / href
+            if not target.exists():
                 errors.append(f"{html_file.name}: broken link -> {href}")
 
     assert len(errors) == 0, f"Broken links found: {errors}"
@@ -68,11 +78,11 @@ def test_all_internal_links_valid():
 def test_html_files_exist():
     """Verify all HTML files are present."""
     expected_files = [
-        "index.html",
-        "me.html",
-        "academic&career.html",
-        "proj.html",
-        "pub.html",
+        "src/index.html",
+        "src/me.html",
+        "src/academic&career.html",
+        "src/proj.html",
+        "src/pub.html",
     ]
 
     for filename in expected_files:
